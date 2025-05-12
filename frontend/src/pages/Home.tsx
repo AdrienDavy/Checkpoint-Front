@@ -57,6 +57,8 @@ export function HomePage() {
       <div className="flex flex-col items-center justify-center my-8 bg-gray-100">
         <form className="flex items-center flex-col lg:flex-row justify-between gap-4 w-full max-w-2xl mb-4 border bg-white border-gray-300 p-4 rounded">
           <input
+            minLength={2}
+            maxLength={50}
             type="text"
             placeholder="Name"
             value={name}
@@ -64,6 +66,8 @@ export function HomePage() {
             className="border w-full border-gray-300 p-2 rounded"
           />
           <input
+            minLength={2}
+            maxLength={3}
             type="text"
             placeholder="Code"
             value={code}
@@ -71,6 +75,7 @@ export function HomePage() {
             className="border w-full border-gray-300 p-2 rounded"
           />
           <input
+            maxLength={4}
             type="text"
             placeholder="Emoji"
             value={emoji}
